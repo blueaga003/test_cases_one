@@ -19,8 +19,10 @@ def is_mel(name, email):
     True
     """
 
-    return name == "Mel Melitpolski" or email == "mel@ubermelon.com"
+    cleaned_name = name.title()
+    cleaned_email = email.lower()
 
+    return cleaned_name == "Mel Melitpolski" or cleaned_email == "mel@ubermelon.com"
 
 def most_and_least_common_type(treats):
     """Given list of treats, return most and least common treat types.
